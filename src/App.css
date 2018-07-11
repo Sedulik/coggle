@@ -1,28 +1,329 @@
-.App {
+.main {
+  color: #fff;
+  background: #9ed56b;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.fullpage {
+  width: 100%;
+  display: flex;
+  box-align: center;
+  min-height: 100vh;
+}
+
+/*  menu */
+.nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-bar .nav-item {
+  padding: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.133);
+}
+
+.nav-item-login {
+  color: #333;
+}
+
+
+/* */
+.middle {
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.section {
+  max-width: 950px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+div.main .logo {
+  height: 70px;
+  width: 148px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.light {
+  font-family: Lato, "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
-.App-title {
-  font-size: 1.5em;
+.tagline {
+  font-size: 30px;
+  margin-top: 50px;
 }
 
-.App-intro {
-  font-size: large;
+div.main .video {
+  display: inline-block;
+  border: 3px solid #fff;
+  background: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin: 50px;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div.main .video iframe {
+  margin: -2px;
+  margin-bottom: -6px;
+}
+
+div.main .login {
+  display: inline-block;
+  width: auto;
+  min-width: 180px;
+  background-image: url(./img/plus.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 20px 50%;
+  padding-left: 56px;
+  padding-right: 32px;
+}
+
+.button.outline,
+.button.outline:hover {
+  border-color: #fff;
+}
+
+.button {
+  padding: 12px;
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  outline: none;
+  line-height: 100%;
+  border: 2px solid transparent;
+  background-color: #9ed56b;
+}
+.front-content {
+    height: 660px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.front-content .screenshot {
+    background: url(./img/lasers.png) no-repeat;
+    background-size: 1000px auto;
+    left: 50%;
+    position: absolute;
+    height: 500px;
+    right: 0;
+    top: 70px;
+}
+.front-content .intro-content {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    line-height: 160%;
+    font-size: 16px;
+    max-width: 500px;
+    top: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: right;
+    margin-right: 55%;
+}
+.doublespaced {
+    line-height: 1.6em;
+},
+.light {
+    font-family: Lato,'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 300;
+}
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+p {
+    margin: 6px;
+}
+.button {
+    padding: 12px;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    outline: none;
+    line-height: 100%;
+    -webkit-transition: background-color .05s,border-color .05s;
+    -moz-transition: background-color .05s,border-color .05s;
+    -ms-transition: background-color .05s,border-color .05s;
+    -o-transition: background-color .05s,border-color .05s;
+    transition: background-color .05s,border-color .05s;
+    border: 2px solid transparent;
+    background-color: #9ed56b;
+}
+.about-container {
+  background: #f3f3f3;
+  color: #474747;
+  font-size: 18px;
+  padding: 100px 20px 100px 20px;
+  line-height: 160%;
+  position: relative;
+}
+.about-container .about {
+  max-width: 700px;
+}
+
+.section {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+.emphasis {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+p {
+  margin: 6px;
+}
+.about a {
+  color: #333;
+  font-weight: bold;
+}
+.about-container:before {
+  content: '';
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  margin-left: -25px;
+  top: -25px;
+  left: 50%;
+}
+.features-container {
+    text-align: center;
+    line-height: 150%;
+    font-size: 16px;
+    padding-bottom: 80px;
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-fluid:before, .container-fluid:after {
+    content: " ";
+    display: table;
+}
+.features .recording.fullwidth {
+    background: #fafafa;
+    padding-top: 90px;
+    margin: 0 -15px 50px -15px;
+}
+.features .recording.fullwidth img {
+    max-width: 700px;
+    height: auto;
+}
+.features-container .button {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+.intro-uses {
+    background: #9ed56b;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 315px;
+    padding-right: 315px;
+    display:flex
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.intro-uses .usecase {
+    padding: 40px;
+    font-size: 17px;
+    line-height: 160%;
+}
+
+
+.intro-uses .usecase .icon {
+    margin: 40px auto 10px auto;
+}
+.intro-uses .usecase .icon img {
+    height: 90px;
+}
+img {
+    vertical-align: middle;
+
+}
+.container:after {
+    clear: both;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.intro-uses:after {
+    content: '';
+    background: #9ed56b;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    margin-left: -25px;
+    top: -25px;
+    left: 50%;
+}
+.table{
+  display:flex
 }
